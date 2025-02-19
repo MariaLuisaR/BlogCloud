@@ -1,29 +1,34 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { useEffect, useState } from "react";
-import { api } from "./api";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./App.css";
+
+const API_URL = "http://34.28.37.200:8000/posts/"; // Asegúrate de cambiar esto si es necesario
 
 function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    api.get("/posts/")
-      .then((response) => setPosts(response.data))
-      .catch((error) => console.error("Error cargando posts:", error));
+    axios.get(API_URL)
+      .then((response) => {
+        setPosts(response.data);
+      })
+      .catch((error) => {
+        console.error("Error cargando posts:", error);
+      });
   }, []);
 
   return (
-    <div>
-      <h1>Blog en la Nube 🚀</h1>
-      <ul>
+    <div className="app-container">
+      <h1 className="title">Blog en la Nube</h1>
+      <div className="post-grid">
         {posts.map((post) => (
-          <li key={post.id}>
+          <div key={post.id} className="post-card">
             <h2>{post.title}</h2>
             <p>{post.content}</p>
-          </li>
+            <span className="author">Autor: {post.author_id}</span>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -9,12 +9,13 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: blogdb
-    ports:
-      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
   backend:
     build: ../blog-backend
     container_name: blog-api
+    restart: always
     depends_on:
       - db
     environment:
@@ -27,5 +28,9 @@ services:
     container_name: blog-ui
     depends_on:
       - backend
+    restart: always
     ports:
       - "3000:3000"
+
+volumes:
+  pgdata:
