@@ -291,3 +291,125 @@ sudo nano models.py
 docker compose down --volumes --remove-orphans
 docker compose up -d --build
 docker ps
+rm -r /path/to/directory/*
+rm -r path_to_dir/*
+rm -r dir
+rm -r blog-backend
+rm -rf *
+ls
+git clone https://github.com/MariaLuisaR/BlogCloud.git
+ls
+cd blogcloud
+cd BlogCloud
+mv * ../
+ls
+cd
+ls
+rm BlogCloud
+rm -r
+rm -d
+rm -d BlogCloud
+rm -rf *
+ls
+git init
+git pull https://github.com/MariaLuisaR/BlogCloud.git
+ls
+god damn it
+git pull https://github.com/MariaLuisaR/BlogCloud.git
+rm -rf *
+git clone https://github.com/MariaLuisaR/BlogCloud.git .
+rm -rf *
+git clone https://github.com/MariaLuisaR/BlogCloud.git .
+git init
+git remote set-url origin https://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@github.com/MariaLuisaR/BlogCloud.git
+git pull
+git checkout main -f
+ls
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+cd
+cd blog-backend
+ls
+sudo nano Dockerfile
+sudo nano docker-compose.yml
+sudo nano requirements.txt
+cd app
+ls
+cd routes
+ls
+cd
+cd blog-frontend
+ls
+sudo nano 
+sudo nano eslint.config.js
+cd vite.config.js
+sudo nano vite.config.js
+sudo nano index.html
+cd src
+ls
+sudo nano App.css
+sudo nano App.jsx
+sudo nano api.js
+sudo nano index.css
+sudo nano main.jsx
+cd
+cd blog-bckend
+cd blog-backend
+docker compose down --volumes --remove-orphans
+cd
+cd blog-frontend
+cd
+cd blog-backend/app
+ls
+sudo nano models.py
+sudo nano schemas.py
+sudo nano crud.py
+ls
+sudo nano crud.py
+sudo nano auth.py
+sudo nano main.py
+cd routes
+ls
+cd posts.py
+sudo nano posts.py
+
+sudo nano posts.py
+sudo nano users.py
+sudo nano tags.py
+sudo nano ratings.py
+cd
+cd blog-frontend
+ls
+cd src
+ls
+cd
+cd blog-backend
+ls
+cd
+cd blog-frontend
+ls
+cd src
+ls
+sudo nano App.jsx
+sudo nano api.js
+cd
+ls
+cd blog-frontend
+ls
+sudo nano index.html
+cd src
+ls
+sudo nano App.css
+sudo nano main.jsx
+cd
+cd blog-frontend
+ls
+sudo nano vite.config.js
+sudo nano eslint.config.js
+cd
+cd blog-backend
+ls
+sudo nano Dockerfile
