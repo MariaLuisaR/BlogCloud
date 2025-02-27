@@ -1,15 +1,27 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .. import schemas, crud
-from ..database import get_db
+from .. import models, schemas
+from ..database import SessionLocal
 
-router = APIRouter()
+router = APIRouter(prefix="/tags", tags=["Tags"])
 
-@router.post("/tags/", response_model=schemas.Tag)
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+@router.get("/")
+def list_tags(db: Session = Depends(get_db)):
+    return db.query(models.Tag).all()
+
+@router.post("/")
 def create_tag(tag: schemas.TagCreate, db: Session = Depends(get_db)):
-    return crud.create_tag(db=db, tag=tag)
-
-@router.get("/tags/", response_model=List[schemas.Tag])
-def read_tags(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    tags = crud.get_tags(db, skip=skip, limit=limit)
-    return tags
+    existing_tag = db.query(models.Tag).filter(models.Tag.name == tag.name).first()
+    if existing_tag:
+        raise HTTPException(status_code=400, detail="Tag already exists")
+    new_tag = models.Tag(name=tag.name)
+    db.add(new_tag)
+    db.commit()
+    return new_tag

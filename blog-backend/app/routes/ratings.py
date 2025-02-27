@@ -1,10 +1,18 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from .. import schemas, crud, auth
-from ..database import get_db
+from .. import crud, schemas
+from ..database import SessionLocal
 
-router = APIRouter()
+router = APIRouter(prefix="/ratings", tags=["Ratings"])
 
-@router.post("/ratings/", response_model=schemas.Rating)
-def create_rating(rating: schemas.RatingCreate, db: Session = Depends(get_db), current_user: schemas.User = Depends(auth.get_current_user)):
-    return crud.create_rating(db=db, rating=rating)
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+@router.post("/posts/{post_id}/rate")
+def rate_post(post_id: int, rating: schemas.RatingCreate, db: Session = Depends(get_db)):
+    return crud.rate_post(db=db, post_id=post_id, rating=rating)
+

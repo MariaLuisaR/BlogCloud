@@ -1,59 +1,29 @@
-from pydantic import BaseModel, EmailStr
-from datetime import datetime
-from typing import List, Optional
+from pydantic import BaseModel, Field
+from typing import List
 
-class UserBase(BaseModel):
-    email: EmailStr
+class UserCreate(BaseModel):
     name: str
-
-class UserCreate(UserBase):
+    email: str
     password: str
 
-class User(UserBase):
-    id: int
-
-    class Config:
-        orm_mode = True
-
-class PostBase(BaseModel):
+class PostCreate(BaseModel):
     title: str
     content: str
-    author_id: int
-    published_date: Optional[datetime] = None
-    rating: Optional[int] = 0
-    tags: List[str] = []
+    tags: List[str]
 
-class PostCreate(PostBase):
-    pass
-
-class Post(PostBase):
-    id: int
-
-    class Config:
-        from_attributes = True
-
-class TagBase(BaseModel):
-    name: str
-
-class TagCreate(TagBase):
-    pass
-
-class Tag(TagBase):
-    id: int
-
-    class Config:
-        orm_mode = True
-
-class RatingBase(BaseModel):
-    user_id: int
-    post_id: int
+class RatingCreate(BaseModel):
     rating: int
 
-class RatingCreate(RatingBase):
-    pass
+class TagCreate(BaseModel):
+    name: str
 
-class Rating(RatingBase):
+class PostResponse(BaseModel):
     id: int
+    title: str
+    content: str
+    author: str
+    tags: List[str]
+    rating: float
 
     class Config:
         orm_mode = True

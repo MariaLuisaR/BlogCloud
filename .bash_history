@@ -413,3 +413,792 @@ cd
 cd blog-backend
 ls
 sudo nano Dockerfile
+cd blog-backend
+source venv/bin/activate
+sudo nano Dockerfile
+sudo nano docker-compose.yml
+sudo nano requirements.txt
+cd
+cd blog-frontend
+sudo nano Dockerfile
+ls
+sudo nano package.json
+sudo nano package-lock.json
+sudo nano src/main.jsx
+sudo nano src/App.jsx
+sudo nano src/index.css
+sudo nano src/api.js
+sudo nano src/App.css
+ls
+sudo nano src/index.html
+sudo nano index.html
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+cd
+cd blog-backend
+ls
+cd app
+ls
+sudo nano main.py
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+docker compose logs blog-api
+dockerlogs blog-api
+docker logs blog-api
+docker compose logs frontend
+cd
+cd blog-frontend
+ls
+cd src
+ls
+cd
+cd blog-backend
+ls
+cd cert.pem
+ls
+cd 
+cd blog-backend
+ls
+sudo nano Dockerfile
+ls
+sudo nano docker-compose.yml
+cd
+sudo nano blog-frontend/Dockerfile
+cd
+cd blog-backend
+ls
+cd
+cd blog-frontend
+ls
+sudo nano vite.config.js
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs frontend
+docker compose logs backend
+docker ps
+ls
+cd app
+ls
+sudo nano auth.py
+sudo nano database.py
+sudo nano main.py
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+docker compose logs frontend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs frontend
+docker compose logs backend
+ls
+sudo nano requirements.txt
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+docker ps
+ls
+sudo nano docker-compose.yml
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+cd
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+ls
+cd app
+ls
+sudo nano main.py
+cd
+cd blog-frontend
+ls
+cd src
+ls
+sudo nano api.js
+sudo nano main.jsx
+sudo nano App.jsx
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs frontend
+docker compose logs backend
+ls
+cd app
+ls
+sudo nano main.py
+sudo nano schemas.py
+cd
+cd blog-frontend
+cd src
+ls
+sudo nano App.jsx
+docker compose down --volumes --remove-orphans
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs frontend
+docker compose logs backend
+docker ps
+curl -X POST "http://34.28.37.200:8000/posts/" -H "Content-Type: application/json" -H "Authorization: Bearer <tu_token_jwt>" -d '{"title": "Nuevo Post", "content": "Contenido del post", "author_id": 1}'
+curl -X POST "http://34.28.37.200:8000/posts/" -H "Content-Type: application/json" -H "Authorization: Bearer <tu_token_jwt>" -d '{"title": "Nuevo Post", "content": "Contenido del post", "author_id": 1}'
+compose down --volumes --remove-orphans
+docker compose down --volumes --remove-orphans
+cd
+git add .
+git commit -m "Conexión back y front"
+git remote set-url origin https://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@github.com/MariaLuisaR/BlogCloud.git
+git push -u origin master
+git init
+git add .
+git commit -m "Conexión back y front"
+git remote set-url origin https://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@github.com/MariaLuisaR/BlogCloud.git
+git push -u origin master
+git add .
+git commit -m "Conexión back y front"
+git push
+git rev-list --objects --all | grep blobid
+git add .
+git commit -m "backfront"
+git remote set-url origin https://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@github.com/MariaLuisaR/BlogCloud.git
+git push
+git add .
+git commit -m "backfront"
+git remote set-url origin https://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@github.com/MariaLuisaR/BlogCloud.git
+git push
+cd blog-backend
+docker compose down --volumes --remove-orphans
+cd
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose down --volumes --remove-orphans
+cd
+git push
+git push --force
+git push https://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@github.com/MariaLuisaR/BlogCloud.git --force
+cd blog-backend
+sudo nano app/database.py
+sudo nano app/models.py
+sudo nano app/schemas.py
+sudo nano app/models.py
+sudo nano app/crud.py
+sudo nano app/auth.py
+cd blog-backend
+source venv/bin/activate
+sudo nano app/crud.py
+sudo nano app/auth.py
+sudo nano app/main.py
+cd
+cd blog-frontend
+sudo nano src/App.jsx
+sudo nano Dockerfile
+cd
+sudo nano blog-backend/Dockerfile
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+ls
+sudo nano docker-compose.yml
+cd
+cd blog-front-end
+cd blog-frontend
+sudo nano Dockerfile
+cd
+cd blog-backend
+sudo nano Dockerfile
+cd
+cd blog-frontend
+ls
+sudo nano src/App.jsx
+cd
+cd blog-backend
+ls
+sudo nano app/main.py
+sudo nano app/auth.py
+sudo nano app/crud.py
+sudo nano app/schemas.py
+sudo nano app/models.py
+sudo nano app/database.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs blog-api
+docker compose logs blog-db
+docker compose blog-api logs
+docker compose logs
+docker compose logs blog-api
+docker-compose logs backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+cd
+cd blog-backend
+ls
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+cd
+cd blog-frontend
+ls
+cd
+cd blog-backend
+ls
+sudo nano requirements.txt
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+ls
+cd app
+sudo nano main.py
+sudo nano models.py
+ssudo nano shcemas.py
+sudo nano schemas.py
+cd routes
+ls
+sudo nano tags.py 
+sudo nano posts.py
+cd
+cd blog-backend/app
+ls
+sudo nano main.oy
+sudo nano main.py
+sudo nano database.py
+sudo nano models.py
+sudo nano schemas.py
+sudo nano auth.py
+cd routes
+ls
+sudo nano routes.py
+sudo nano users.py
+sudo nano posts.py
+sudo nano ratings.py
+sudo nano tags.py
+cd
+cd blog-frontend
+cd src
+sudo nano main.jsx
+sudo nano api.js
+ls
+sudo nano pages/Home.jsx
+cd pages
+mkdir pages
+ls
+sudo nano pages/Home.jsx
+sudo nano pages/Login.jsx
+sudo nano pages/Register.jsx
+sudo nano pages/CreatePost.jsx
+sudo nano pages/PostDetail.jsx
+ls
+cd pages
+ls
+cd
+cd blog-frontend/src
+sudo nano index.css
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+cd
+cd blog-frontend
+ls
+sudo nano package-lock.json
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose down --volumes --remove-orphans
+docker compose run --rm frontend npm install
+docker compose up -d --build
+docker compose run --rm frontend npm list react-router-dom
+cd
+cd blog-frontend
+docker compose run --rm frontend npm list react-router-dom
+docker compose run --rm frontend npm install
+ls
+sudo nano package-lock.json
+sudo nano package.json
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+cd
+cd blog-backend
+ls
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/models.py
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/main.py
+sudo nano models.py
+sudo nano app/models.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose backend
+docker compose logs backend
+cd
+cd blog-backend
+ls
+cd app
+ls
+sudo nano main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker system prune -a
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+cd blog-backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/main.py
+sudo nano app/routes/users.py
+cd app/routes
+ls
+sudo nano crud.py
+lscd
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker ps 
+docker compose logs backned
+docker compose logs backend
+cd app/routes
+ls
+sudo nano crud.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+rah
+docker compose logs backend
+sudo nano users.py
+ls
+cd
+cd blog-backend/app
+ls
+sudo nano routes/users.py
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+sudo nano app/auth.py
+cd app
+ls
+sudo nano auth.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+ls
+sudo nano routes/users.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+ls
+sudo nano crud.py
+sudo nano routes/posts.py
+cd routes
+ls
+sudo nano ratings.py
+sudo nano tags.py
+sudo nano users.py
+rm crud.py
+ls
+cd 
+cd blog-backend/app
+ls
+cd
+cd blogbackend
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+docker ps
+sudo nano app/main.py
+cd
+cd blog-fronted
+cd blog-frontend
+ls
+sudo nano src/api.js
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+cd
+cd blog-frontend
+ls
+cd src
+ls
+cd pages
+ls
+sudo nano Home.jsx
+sudo nano Dashboard.jsx
+cd
+cd blog-frontend/src
+ls
+sudo nano main.jsx
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+sudo nano app/main.py
+sudo nano app/models.py
+sudo nano app/schemas.py
+sudo nano app/routes/users.pt
+sudo nano app/routes/users.py
+sudo nano app/crud.py
+cd
+sudo nano blog-frontend/src/pages/Register.jsx
+cd blog-backend
+sudo nano app/models.py
+sudo nano app/schemas.py
+sudo nano app/routes/posts.py
+cd
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/routes/posts.py
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+sudo nano app/main.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+sudo nano app/crud.py
+cd app
+ls
+sudo nano crud.py
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "123456"}'
+docker compose down --volumes --remove-orphans
+docker compose run --rm backend pip uninstall bcrypt -y
+docker compose run --rm backend pip install bcrypt==4.0.1
+docker compose up -d --build
+cd
+sudo nano blog-frontend/src/pages/Login.jsx
+sudo nano blog-frontend/src/pages/Register.jsx
+sudo nano blog-frontend/src/pages/Login.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+cd
+cd blog-frontend/src/pages/Login.jsx
+sudo nano blog-frontend/src/pages/Login.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose login backend
+docker compose logs backend
+sudo nano api/crud.py
+sudo nano app/crud.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+docker compose down
+docker compose run --rm backend pip uninstall bcrypt -y
+docker compose run --rm backend pip install bcrypt==4.0.1 passlib[bcrypt]
+docker compose up -d --build
+sudo nano app/auth.py
+sudo nano app/crud.py
+sudo nano app/auth.py
+docker compose down
+docker compose up -d --build
+docker ps
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=tuemail@example.com&password=123456"
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "123456"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=123456"
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/users.py
+sudo nano app/auth.py
+sudo nano app/crud.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd 
+sudo nano blog-frontend/src/pages/CreatePost.jsx
+sudo nano blog-backend/app/schemas.py
+sudo nano blog-backend/app/routes/posts.py
+docker compose down --volumes --remove-orphans
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/schemas.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/routes/posts.py
+docker compose down
+docker compose up -d --build
+docker ps
+docker compose logs backend
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNTgxMzU0fQ.t5lxL27Ia9UuO8tstZpSExy6OPohdw7-fCeqiarRCJY"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNTgxNzg3fQ.3eylyMp0L3wp2RjnPKGTf498NH6Dvilrex5BjmRpQQo[B"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNTgxNzg3fQ.3eylyMp0L3wp2RjnPKGTf498NH6Dvilrex5BjmRpQQo"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNTgxNzg3fQ.3eylyMp0L3wp2RjnPKGTf498NH6Dvilrex5BjmRpQQo"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+sudo nano app/schemas.py
+docker compose exec backend cat /app/app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+docker compose logs backend --follow
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/schemas.py
+sudo nano app/posts.py
+sudo nano app/routes/posts.py
+docker compose down
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/posts.py
+sudo nano app/schemas.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNTgzNjY1fQ.8RZ-LE9jSkMcAJpWXnXWrTfDLJTFcViMyhqBCwCTc-Q"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+docker compose up -d --build
+docker ps
+docker compose logs backend
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNjE1MDA0fQ.3-CD_WYEUmilIV96QupLCkSgxHMqy4qHVSvrNSjLiKc"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+docker compose up -d --build
+docker ps
+docker compose logs backend
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+docker compose down
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer TU_TOKEN_AQUI"      -d '{"title": "Post final", "content": "¡Por fin funciona!", "tags": ["victoria"]}'
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+sudo nano app/schemas.py
+curl -X POST "http://34.28.37.200:8000/posts/test
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+sudo nano app/main.py
+sudo nano app/routes/posts.py
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNjE2NDc3fQ.M61MAMRT7yw_6Sor-cFHWEMiGQ9LWsJQXJuhzQZSxQs"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+docker compose logs backend
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+docker compose up -d --build
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwNjE2NzU5fQ.AYwp3FEmwMeFpK613aSxKfDKbW3xa1N-duE1mxa_NQY"      -d '{"title": "Mi post", "content": "Este es el contenido", "tags": ["react", "fastapi"]}'
+sudo nano logs backend
+docker compose logs backend
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+curl -X POST "http://34.28.37.200:8000/posts/"      -H "Content-Type: application/json"      -d '{"title": "Post sin auth", "content": "Probando sin autenticación", "tags": ["test"]}'
+docker compose logs backend
+sudo nano app/auth.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+docker compose down --volumes --remove-orphans
+sudo nano app/auth.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backends
+docker compose logs backend
+sudo nano app/auth.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano  app/routes/posts.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/auth.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend
+docker ps
+docker compose logs backend
+sudo nano app/routes/posts.py
+curl -X GET "http://34.28.37.200:8000/posts/"
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+sudo nano app/schemas.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+sudo nano app/models.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/models.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+sudo nano app/models.py
+docker compose down -v
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+sudo nano app/routes/posts.py
+cd
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+sudo nano blog-frontend/src
+cd blog-frontend/src
+ls
+sudo nano App.jsx
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+cd blog-frontend/src
+sudo nano App.jsx

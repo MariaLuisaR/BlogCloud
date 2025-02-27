@@ -1,29 +1,75 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .. import schemas, crud, auth
-from ..database import get_db
+from .. import models, schemas, auth
+from ..database import SessionLocal
+from typing import List
 
-router = APIRouter()
+router = APIRouter(prefix="/posts", tags=["Posts"])
 
-@router.get("/posts/", response_model=List[schemas.Post])
-def read_posts(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    posts = crud.get_posts(db, skip=skip, limit=limit)
-    return posts
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
-@router.post("/posts/", response_model=schemas.Post)
-def create_post(post: schemas.PostCreate, db: Session = Depends(get_db), current_user: schemas.User = Depends(auth.get_current_user)):
-    return crud.create_post(db=db, post=post)
+@router.post("/")
+def create_post(
+    post: schemas.PostCreate,
+    db: Session = Depends(get_db),
+    user: models.User = Depends(auth.get_current_user),
+):
+    if not user:
+        raise HTTPException(status_code=401, detail="No autorizado.")
 
-@router.put("/posts/{post_id}", response_model=schemas.Post)
-def update_post(post_id: int, post: schemas.PostCreate, db: Session = Depends(get_db), current_user: schemas.User = Depends(auth.get_current_user)):
-    db_post = crud.get_post(db, post_id=post_id)
-    if db_post.author_id != current_user.id:
-        raise HTTPException(status_code=403, detail="Not authorized to edit this post")
-    return crud.update_post(db=db, post_id=post_id, post=post)
+    new_post = models.Post(
+        title=post.title,
+        content=post.content,
+        author_id=user.id
+    )
 
-@router.delete("/posts/{post_id}", response_model=schemas.Post)
-def delete_post(post_id: int, db: Session = Depends(get_db), current_user: schemas.User = Depends(auth.get_current_user)):
-    db_post = crud.get_post(db, post_id=post_id)
-    if db_post.author_id != current_user.id:
-        raise HTTPException(status_code=403, detail="Not authorized to delete this post")
-    return crud.delete_post(db=db, post_id=post_id)
+    db.add(new_post)
+    db.commit()
+    db.refresh(new_post)
+
+    return {
+        "message": "Post creado exitosamente",
+        "post": {
+            "title": new_post.title,
+            "content": new_post.content,
+            "author": user.name,
+        },
+    }
+
+@router.get("/", response_model=List[schemas.PostResponse])
+def list_posts(db: Session = Depends(get_db)):
+    posts = db.query(models.Post).all()
+
+    return [
+        {
+            "id": post.id,
+            "title": post.title,
+            "content": post.content,
+            "author": post.author.name if post.author else "Desconocido",
+            "tags": [tag.name for tag in post.tags],
+            "rating": sum(r.value for r in post.ratings) / len(post.ratings) if post.ratings else 0
+        }
+        for post in posts
+    ]
+
+
+@router.get("/{post_id}", response_model=schemas.PostResponse)
+def get_post(post_id: int, db: Session = Depends(get_db)):
+    post = db.query(models.Post).filter(models.Post.id == post_id).first()
+
+    if not post:
+        raise HTTPException(status_code=404, detail="Post no encontrado")
+
+    return {
+        "id": post.id,
+        "title": post.title,
+        "content": post.content,
+        "author": post.author.name if post.author else "Desconocido",
+        "tags": [tag.name for tag in post.tags],
+        "rating": sum(r.value for r in post.ratings) / len(post.ratings) if post.ratings else 0
+    }
