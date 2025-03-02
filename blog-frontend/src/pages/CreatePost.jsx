@@ -8,6 +8,7 @@ const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [tags, setTags] = useState("");
+  const [date, setDate] = useState("");
   const [token, setToken] = useState(null);
   const navigate = useNavigate();
 
@@ -27,7 +28,7 @@ const CreatePost = () => {
     try {
       await axios.post(
         `${API_URL}/posts/`, 
-        { title, content, tags: tags.split(",").map(tag => tag.trim()) }, 
+        { title, content, tags: tags.split(",").map(tag => tag.trim()), date: Date()}, 
         { headers: { Authorization: `Bearer ${token}` } }
       );
       alert("Post creado exitosamente. Redirigiendo al Dashboard...");
