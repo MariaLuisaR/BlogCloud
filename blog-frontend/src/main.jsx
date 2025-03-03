@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import CreatePost from "./pages/CreatePost";
 import PostDetail from "./pages/PostDetail";
 import Dashboard from "./pages/Dashboard";
+import EditPost from "./pages/EditPost";
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/create" element={<CreatePost />} />
         <Route path="/posts/:id" element={<PostDetail />} />
+        <Route path="/edit/:id" element={<EditPost />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

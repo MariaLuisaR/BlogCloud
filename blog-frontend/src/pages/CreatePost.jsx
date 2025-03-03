@@ -1,83 +1,105 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 const API_URL = "http://34.28.37.200:8000";
 
 const CreatePost = () => {
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [tags, setTags] = useState("");
-  const [token, setToken] = useState(null);
-  const navigate = useNavigate();
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+    const [tags, setTags] = useState("");
+    const [token, setToken] = useState(null);
+    const [isEdit, setIsEdit] = useState(false);
+    const { id } = useParams();
+    const navigate = useNavigate();
 
-  useEffect(() => {
-    const savedToken = localStorage.getItem("token");
-    if (savedToken) {
-      setToken(savedToken);
-    }
-  }, []);
+    useEffect(() => {
+        const savedToken = localStorage.getItem("token");
+        if (savedToken) {
+            setToken(savedToken);
+        }
 
-  const handleCreatePost = async () => {
-    if (!token) {
-      alert("Debes iniciar sesión para crear un post.");
-      return;
-    }
+        if (id) {
+            setIsEdit(true);
+            axios.get(`http://34.28.37.200:8000/posts/${id}`)
+                .then(response => {
+                    setTitle(response.data.title);
+                    setContent(response.data.content);
+                    setTags(response.data.tags.join(", "));
+                })
+                .catch(error => console.error("Error al obtener post:", error));
+        }
+    }, [id]);
 
-    try {
-      await axios.post(
-        `${API_URL}/posts/`, 
-        { title, content, tags: tags.split(",").map(tag => tag.trim()) }, 
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-      alert("Post creado exitosamente. Redirigiendo al Dashboard...");
-      navigate("/dashboard");
-    } catch (error) {
-      console.error("Error al crear post:", error);
-      alert("Error al crear el post. Verifica que todos los campos sean correctos.");
-    }
-  };
+    const handleCreatePost = async () => {
+        if (!token) {
+            alert("Debes iniciar sesión para crear un post.");
+            return;
+        }
 
-  return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Crear Nuevo Post</h1>
+        try {
+            const postData = { title, content, tags: tags.split(",").map(tag => tag.trim()) };
+            if (isEdit) {
+                await axios.put(
+                    `http://34.28.37.200:8000/posts/${id}`,
+                    postData,
+                    { headers: { Authorization: `Bearer ${token}` } }
+                );
+                alert("Post actualizado exitosamente. Redirigiendo al Dashboard...");
+            } else {
+                await axios.post(
+                    `http://34.28.37.200:8000/posts/`,
+                    postData,
+                    { headers: { Authorization: `Bearer ${token}` } }
+                );
+                alert("Post creado exitosamente. Redirigiendo al Dashboard...");
+            }
+            navigate("/dashboard");
+        } catch (error) {
+            console.error("Error al crear/editar post:", error);
+            alert("Error al crear/editar el post. Verifica que todos los campos sean correctos.");
+        }
+    };
 
-      {!token ? (
-        <div className="text-red-500">
-          <p>Debes iniciar sesión para crear un post.</p>
-          <button onClick={() => navigate("/login")} className="bg-blue-500 text-white px-4 py-2 rounded mt-2">
-            Ir a Iniciar Sesión
-          </button>
+    return (
+        <div className="container mx-auto p-4">
+            <h1 className="text-2xl font-bold mb-4">{isEdit ? "Editar Post" : "Crear Nuevo Post"}</h1>
+            {!token ? (
+                <div className="text-red-500">
+                    <p>Debes iniciar sesión para crear un post.</p>
+                    <button onClick={() => navigate("/login")} className="bg-blue-500 text-white px-4 py-2 rounded mt-2">
+                        Ir a Iniciar Sesión
+                    </button>
+                </div>
+            ) : (
+                <>
+                    <input
+                        type="text"
+                        placeholder="Título"
+                        className="border p-2 w-full mb-2"
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                    />
+                    <textarea
+                        placeholder="Contenido"
+                        className="border p-2 w-full mb-2"
+                        value={content}
+                        onChange={(e) => setContent(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Etiquetas (separadas por comas)"
+                        className="border p-2 w-full mb-2"
+                        value={tags}
+                        onChange={(e) => setTags(e.target.value)}
+                    />
+                    <button onClick={handleCreatePost} className="bg-blue-500 text-white px-4 py-2 rounded">
+                        {isEdit ? "Actualizar" : "Publicar"}
+                    </button>
+                </>
+            )}
         </div>
-      ) : (
-        <>
-          <input
-            type="text"
-            placeholder="Título"
-            className="border p-2 w-full mb-2"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-          <textarea
-            placeholder="Contenido"
-            className="border p-2 w-full mb-2"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Etiquetas (separadas por comas)"
-            className="border p-2 w-full mb-2"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)}
-          />
-          <button onClick={handleCreatePost} className="bg-blue-500 text-white px-4 py-2 rounded">
-            Publicar
-          </button>
-        </>
-      )}
-    </div>
-  );
+    );
 };
 
 export default CreatePost;

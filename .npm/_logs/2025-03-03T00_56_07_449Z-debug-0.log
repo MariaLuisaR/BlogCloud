@@ -1,0 +1,30 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.8.2
+2 info using node@v18.20.6
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/rodriguezcasmarialuisa/blog-backend/.npmrc
+5 silly config load:file:/home/rodriguezcasmarialuisa/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:/home/rodriguezcasmarialuisa/.npm/_logs/2025-03-03T00_56_07_449Z-
+10 verbose logfile /home/rodriguezcasmarialuisa/.npm/_logs/2025-03-03T00_56_07_449Z-debug-0.log
+11 silly packumentCache heap:2102132736 maxSize:525533184 maxEntrySize:262766592
+12 silly logfile start cleaning logs, removing 12 files
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open '/home/rodriguezcasmarialuisa/blog-backend/package.json'
+16 error code ENOENT
+17 error syscall open
+18 error path /home/rodriguezcasmarialuisa/blog-backend/package.json
+19 error errno -2
+20 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/home/rodriguezcasmarialuisa/blog-backend/package.json'
+21 error enoent This is related to npm not being able to find a file.
+21 error enoent
+22 verbose cwd /home/rodriguezcasmarialuisa/blog-backend
+23 verbose os Linux 6.8.0-1021-gcp
+24 verbose node v18.20.6
+25 verbose npm  v10.8.2
+26 verbose exit -2
+27 verbose code -2
+28 error A complete log of this run can be found in: /home/rodriguezcasmarialuisa/.npm/_logs/2025-03-03T00_56_07_449Z-debug-0.log

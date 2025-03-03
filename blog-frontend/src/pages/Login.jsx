@@ -19,8 +19,17 @@ const handleLogin = async (e) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     });
 
-    localStorage.setItem("token", response.data.access_token);
-    setAuthToken(response.data.access_token);
+    const token = response.data.access_token;
+    localStorage.setItem("token", token);
+    setAuthToken(token);
+
+    // 🔍 Obtener datos del usuario y guardarlos en localStorage
+    const userResponse = await api.get("/users/me", {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+
+    localStorage.setItem("user", JSON.stringify(userResponse.data));
+
     alert("Inicio de sesión exitoso. Redirigiendo al Dashboard...");
     navigate("/dashboard");
   } catch (error) {
@@ -28,6 +37,7 @@ const handleLogin = async (e) => {
     alert("Error al iniciar sesión. Verifica tus credenciales.");
   }
 };
+
 
 
   return (

@@ -1202,3 +1202,372 @@ docker compose logs backend --follow
 cd
 cd blog-frontend/src
 sudo nano App.jsx
+cd blog-backend
+source venv/bin/activate
+cd
+cd blog-frontend/src/pages
+sudo nano Dashboard.jsx
+sudo nano PostDetail.jsx
+sudo nano CreatePost.jsx
+cd
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+dcoker ps
+docker ps
+cd
+cd blog-frontend/src
+sudo nano App.jsx
+sudo nano pages/Dashboard.jsx
+sudo nano pages/CreatePost.jsx
+sudo nano pages/PostDetail.jsx
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+cd blog-frontend/src
+ls
+sudo nano App.jsx
+cd pages
+sudo nano Dashboard.jsx
+sudo nano CreatePost.jsx
+sudo nano PostDetail.jsx
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/pages/CreatePost.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+cd
+sudo nano blog-frontend/src/pages/CreatePost.jsx
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+cd
+sudo nano blog-frontend/src/pages/CreatePost.jsx
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/pages/CreatePost.jsx
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+cd
+git add .
+git commit -m "create, detail & list"
+git remote add origin https://github.com/MariaLuisaR/BlogCloud.git
+git remote -v
+git push origin main
+git remote set-url origin https://<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@github.com/MariaLuisaR/BlogCloud.git
+git remote set-url origin https://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@github.com/MariaLuisaR/BlogCloud.git
+git push origin main
+can
+cd blog-backend
+source venv/bin/activate
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose down --volumes --remove-orphans
+cd app
+sudo nano models.py
+sudo nano schemas.py
+sudo nano routes/posts.py
+cd
+cd blog-frontend/src
+sudo nano pages/Dashboard.jsx
+sudo nano pages/PostDetail.jsx
+cd
+cd blog-backend
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-backend/app/routes/posts.py
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+docker compose down --volumes --remove-orphans
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose down --volumes --remove-orphans
+docker image prune -a
+docker compose up -d --build
+sudo docker image prune -f && sudo docker container prune -f 
+docker image ls -a
+docker system prune
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+docker compose down --volumes --remove-orphans
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/pages/postDetail.jsx
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+docker compose down --volumes --remove-orphans
+cd blog-backend
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+cd
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+cd
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+docker compose down --volumes --remove-orphans
+sudo nano app/routes/posts.py
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+sudo nano blog-frontend/src/pages/CreatePost.jsx
+sudo nano blog-frontend/src/App.css
+sudo nano blog-backend/app/routes/users.py
+sudo nano blog-backend/app/routes/crud.py
+sudo nano blog-backend/app/crud.py
+sudo nano blog-backend/app/auth.py
+sudo nano blog-backend/app/routes/tags.py
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/routes/users.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-backend/app/routes/posts.py
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/pages/PostDetail.jsx
+sudo nano blog-frontend/src/App.css
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+cd
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/pages/Dashboard
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/pages/Dashboard.jsx
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/users.py
+sudo nano app/auth.py
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/api.js
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+curl -X POST "http://34.28.37.200:8000/users/login" -H "Content-Type: application/x-www-form-urlencoded" -d "username=user@example.com&password=password"
+docker ps
+docker compose logs backend
+sudo nano app/auth.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/users.py
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+sudo nano app/routes/users.py
+sudo nano app/auth.py
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/api.js
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/login" -H "Content-Type: application/x-www-form-urlencoded" -d "username=user@example.com&password=password"
+curl -X POST "http://34.28.37.200:8000/users/login" -H "Content-Type: application/x-www-form-urlencoded" -d "username=a@a.com&password=a"
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano log-backend/app/main.py
+sudo nano blog-backend/app/main.py
+cd blog-backend
+curl -X GET "http://34.28.37.200:8000/users/me" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiQGIuY29tIiwiZXhwIjoxNzQwOTU3MDUxfQ.OX3qMA2xwtMCe3jLWu156EnJBhhr6-oCS8nsjtrqh60"
+sudo nano app/routes/users.py
+docker compose down
+docker compose up -d --build
+docker ps
+docker compose logs backend
+sudo nano app/routes/users.py
+docker compose down
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X GET "http://34.28.37.200:8000/users/me" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwOTU3OTI3fQ.UuEMum_rEXxmhPyMB9J5QSw_DUSVBftcQs4eSTbhY6c"
+cd
+sudo nano blog-frontend/src/App.jsx
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+curl -X POST "http://34.28.37.200:8000/users/register"      -H "Content-Type: application/json"      -d '{"name": "Prueba", "email": "prueba@email.com", "password": "12345"}'
+curl -X POST "http://34.28.37.200:8000/users/login"      -H "Content-Type: application/x-www-form-urlencoded"      -d "username=prueba@email.com&password=12345"
+curl -X GET "http://34.28.37.200:8000/users/me" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwcnVlYmFAZW1haWwuY29tIiwiZXhwIjoxNzQwOTU4NDQwfQ.iJvUgommEYGCzCwF6KEHIlosdtITLiVlwIFcPvAFdOs"
+docker compose lgos frontend
+docker compose logs frontend
+cd blog-backend
+source venv/bin/activate
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-frontend/src/api.js
+sudo nano blog-frontend/src/App.jsx
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/api.js
+sudo nano blog-backend/app/main.py
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/App.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker compose logs backend --follow
+cd
+sudo nano blog-frontend/src/App.jsx
+sudo nano blog-backend/app/main.py
+sudo nano blog-frontend/src/main.jsx
+docker compose down --volumes --remove-orphans
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+rm -rf node_modules/.vite
+npm install
+cd
+cd blog-frontend
+rm -rf node_modules/.vite
+npm install 
+npm run dev
+sudo nano src/main.jsx
+cd src
+ls
+sudo nano main.jsx
+cd
+sudo nano blog-frontend/vite.config.js
+npm run dev
+cd blog-frontend
+npm run dev
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+cd
+sudo nano blog-frontend/src/main.jsx
+cd blog-backend
+docker compose down --volumes --remove-orphans
+docker compose up -d --build
+docker ps
+docker compose logs backend --follow
+cd
+cd blog-frontend
+npm run build
+sduo nano app/main.jsx
+sudo nano app/main.jsx
+sudo nano src/main.jsx
+cd
+cd blog-frontned
+cd blog-frontend
+npm run dev
+cd
+cd blog-backend
+docker compose down --volumes --remove-orphans
+cd
+cd blog-frontend
+npm run dev
