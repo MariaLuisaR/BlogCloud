@@ -1,5 +1,6 @@
-from pydantic import BaseModel, Field
-from typing import List
+from pydantic import BaseModel
+from typing import List, Optional
+from datetime import datetime
 
 class UserCreate(BaseModel):
     name: str
@@ -22,8 +23,10 @@ class PostResponse(BaseModel):
     title: str
     content: str
     author: str
+    author_id: int
     tags: List[str]
     rating: float
+    created_at: datetime
 
     class Config:
         orm_mode = True

@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Text, Table, Float
+from sqlalchemy import Column, Integer, String, ForeignKey, Text, Table, Float, DateTime, func
 from sqlalchemy.orm import relationship
 from .database import Base
 
@@ -24,8 +24,9 @@ class Post(Base):
     content = Column(Text)
     author_id = Column(Integer, ForeignKey("users.id"))
     author = relationship("User")
-    tags = relationship("Tag", secondary=post_tags, back_populates="posts")
+    tags = relationship("Tag", secondary="post_tags", back_populates="posts")
     ratings = relationship("Rating", back_populates="post")
+    created_at = Column(DateTime, default=func.now())
 
 class Tag(Base):
     __tablename__ = "tags"
@@ -35,7 +36,6 @@ class Tag(Base):
 
 class Rating(Base):
     __tablename__ = "ratings"
-
     id = Column(Integer, primary_key=True, index=True)
     post_id = Column(Integer, ForeignKey("posts.id"))
     user_id = Column(Integer, ForeignKey("users.id"))
